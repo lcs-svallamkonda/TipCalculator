@@ -22,6 +22,7 @@
 		75D9FA90235396B800017FE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75D9FA93235396B800017FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75D9FA95235396B800017FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75D9FA9B235397B700017FE4 /* TipCalculator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TipCalculator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				75D9FA90235396B800017FE4 /* Assets.xcassets */,
 				75D9FA92235396B800017FE4 /* LaunchScreen.storyboard */,
 				75D9FA95235396B800017FE4 /* Info.plist */,
+				75D9FA9B235397B700017FE4 /* TipCalculator.playground */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
