@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var billAmount: UITextField!
     @IBOutlet weak var tipPercentage: UITextField!
     @IBOutlet weak var splitBetweenThisManyPeople: UITextField!
+    @IBOutlet weak var totalTip: UILabel!
+    @IBOutlet weak var tipPerPerson: UILabel!
     
     //MARK: Initializers
     
@@ -42,8 +44,16 @@ class ViewController: UIViewController {
         //Calculate the Tip
         let tipAmountInDollars = billAmountAsDouble*tipPercentageAsPercent
         let tipAmountPerPerson = tipAmountInDollars/splitBetweenThisManyPeopleAsDouble
+        
+        //Turn number into Strings
+        let tipAmountInDollarsAsString = String(tipAmountInDollars)
+        let tipAmountPerPersonAsString = String(tipAmountPerPerson)
+        //Display Values
+       totalTip.text = tipAmountInDollarsAsString
+       tipPerPerson.text = tipAmountPerPersonAsString
+        
     }
 
-
+    
 }
 
