@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27n-SR-dqW">
-                                <rect key="frame" x="69" y="58" width="236" height="48"/>
+                                <rect key="frame" x="69" y="66" width="236" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -114,9 +114,7 @@
                     <navigationItem key="navigationItem" id="pHq-F8-24x"/>
                     <connections>
                         <outlet property="billAmount" destination="TGl-0S-ITZ" id="6rk-Qd-NGX"/>
-                        <outlet property="h" destination="TGl-0S-ITZ" id="0nt-Gv-28a"/>
                         <outlet property="splitBetweenThisManyPeople" destination="sK7-wH-tN0" id="pT2-fr-IjX"/>
-                        <outlet property="submittedBillAmount" destination="TGl-0S-ITZ" id="UsN-cY-NxA"/>
                         <outlet property="tipPerPerson" destination="bXx-Af-3j5" id="RBh-iL-Js4"/>
                         <outlet property="tipPercentage" destination="Btv-PE-0Ne" id="kbj-3C-QGb"/>
                         <outlet property="totalTip" destination="UNP-zs-W67" id="9PO-sY-qfH"/>

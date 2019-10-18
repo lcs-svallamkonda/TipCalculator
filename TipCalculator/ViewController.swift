@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitBetweenThisManyPeople: UITextField!
     @IBOutlet weak var totalTip: UILabel!
     @IBOutlet weak var tipPerPerson: UILabel!
-    
+  
     //MARK: Initializers
     
     
