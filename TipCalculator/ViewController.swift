@@ -26,8 +26,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-        // Get actual strings from each text field, Force unwrap the optional values
+        // Will be used to calculate and display answers
     @IBAction func calculateTip(_ sender: Any) {
+       // Get actual strings from each text field, Force unwrap the optional values
         let billAmountAsString = billAmount.text!
         let tipPercentageAsString = tipPercentage.text!
         let splitBetweenThisManyPeopleAsString = splitBetweenThisManyPeople.text!
