@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitBetweenThisManyPeople: UITextField!
     @IBOutlet weak var totalTip: UILabel!
     @IBOutlet weak var tipPerPerson: UILabel!
-  
     //MARK: Initializers
     
     
@@ -26,9 +25,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
-        // Get actual strings from each text field
-        //Force unwrap the optional values
+    }
+        // Get actual strings from each text field, Force unwrap the optional values
+    @IBAction func calculateTip(_ sender: Any) {
         let billAmountAsString = billAmount.text!
         let tipPercentageAsString = tipPercentage.text!
         let splitBetweenThisManyPeopleAsString = splitBetweenThisManyPeople.text!
@@ -49,11 +48,13 @@ class ViewController: UIViewController {
         let tipAmountInDollarsAsString = String(tipAmountInDollars)
         let tipAmountPerPersonAsString = String(tipAmountPerPerson)
         //Display Values
-       totalTip.text = tipAmountInDollarsAsString
-       tipPerPerson.text = tipAmountPerPersonAsString
-        
+        totalTip.text = tipAmountInDollarsAsString
+        tipPerPerson.text = tipAmountPerPersonAsString
     }
+    
+        
+}
 
     
-}
+
 
