@@ -35,14 +35,11 @@ class ViewController: UIViewController {
         
         //Turn strings into Double Values
         let billAmountAsDouble = Double(billAmountAsString)!
-        let tipPercentageAsDouble = Double(tipPercentageAsString)!
+        let tipPercentageAsDouble = Double(tipPercentageAsString)! / 100
         let splitBetweenThisManyPeopleAsDouble = Double(splitBetweenThisManyPeopleAsString)!
         
-        //Turn tip percentage into a percent
-        let tipPercentageAsPercent = tipPercentageAsDouble/100
-        
         //Calculate the Tip
-        let tipAmountInDollars = billAmountAsDouble*tipPercentageAsPercent
+        let tipAmountInDollars = billAmountAsDouble*tipPercentageAsDouble
         let tipAmountPerPerson = tipAmountInDollars/splitBetweenThisManyPeopleAsDouble
         
         //Turn number into Strings
