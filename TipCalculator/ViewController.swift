@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //MARK: Properties
     @IBOutlet weak var billAmount: UITextField!
     @IBOutlet weak var tipPercentage: UITextField!
@@ -26,9 +26,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-        // Will be used to calculate and display answers
+    // Will be used to calculate and display answers
     @IBAction func calculateTip(_ sender: Any) {
-       // Get actual strings from each text field, Force unwrap the optional values
+        // Get actual strings from each text field, Force unwrap the optional values
         let billAmountAsString = billAmount.text!
         let tipPercentageAsString = tipPercentage.text!
         let splitBetweenThisManyPeopleAsString = splitBetweenThisManyPeople.text!
@@ -42,17 +42,19 @@ class ViewController: UIViewController {
         let tipAmountInDollars = billAmountAsDouble*tipPercentageAsDouble
         let tipAmountPerPerson = tipAmountInDollars/splitBetweenThisManyPeopleAsDouble
         
-        //Turn number into Strings
-        let tipAmountInDollarsAsString = String(tipAmountInDollars)
-        let tipAmountPerPersonAsString = String(tipAmountPerPerson)
         //Display Values
-        totalTip.text = tipAmountInDollarsAsString
-        tipPerPerson.text = tipAmountPerPersonAsString
+        //totalTip.text = String(tipAmountInDollars)
+       // totalTip.text = "$\(tipAmountInDollars)"
+        totalTip.text = String(format: "$%.2f", tipAmountInDollars)
+       // tipPerPerson.text = String(tipAmountPerPerson)
+        //tipPerPerson.text = "$\(tipAmountPerPerson)"
+        tipPerPerson.text = String(format: "$%.2f", tipAmountPerPerson)
+        
     }
     
-        
+    
 }
 
-    
+
 
 
